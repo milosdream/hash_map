@@ -43,7 +43,7 @@ describe LinkedList do
   describe "#each" do
     it "enumerates over the links" do
       i = 0
-      vals = (1..3).to_a
+      vals = [3,2,1]
       list.each do |link|
         expect(link.val).to eq(vals[i])
         i += 1
